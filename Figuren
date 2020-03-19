@@ -1,0 +1,116 @@
+//Dreieck
+package de.cofinpro;
+
+public class Dreieck {
+
+double grund=5,hoehe=7;
+double a=10,b=5,c=0;
+
+ private double FlaecheDreieck=(0.5*grund*hoehe);
+ private double UmfangDreieck=(a+b+c);
+
+
+    public double getFlaecheDreieck() {
+        return FlaecheDreieck;
+    }
+
+    public double getUmfangDreieck() {
+        return UmfangDreieck;
+    }
+}
+
+//Kreis
+public class Kreis {
+   private double radius=4;
+
+
+   private double FlaecheKreis=(3.14*radius);
+
+   private double UmfangKreis=(2*3.14*radius);
+
+
+
+
+    public double getFlaecheKreis() {
+        return FlaecheKreis;
+    }
+
+    public double getUmfangKreis() {
+        return UmfangKreis;
+    }
+
+}
+
+//Rechteck
+public class Rechteck {
+
+    double a=4.5,b=6.2;
+
+   double  FlaecheRechteck= a*b;
+   double UmfangRechteck= (2*a + 2*b);
+
+
+    public double getFlaecheRechteck() {
+        return FlaecheRechteck;
+    }
+
+    public double getUmfangRechteck() {
+        return UmfangRechteck;
+    }
+}
+
+//Quadrat
+public class Quadrat {
+
+    double a=6;
+
+    double FlaecheQuadrat=a*a;
+    double UmfangQuadrat=4*a;
+
+
+    public double getFlaecheQuadrat() {
+        return FlaecheQuadrat;
+    }
+
+    public double getUmfangQuadrat() {
+        return UmfangQuadrat;
+    }
+}
+
+
+//Main
+public class Main {
+
+    public static void main(String[] args) {
+
+        // Kreis
+       Kreis K =new Kreis();
+
+      System.out.println( K.getFlaecheKreis());
+       System.out.println(K.getUmfangKreis());
+
+       // Quadrat
+        Quadrat Q= new Quadrat();
+
+        System.out.println( Q.getFlaecheQuadrat());
+        System.out.println( Q.getUmfangQuadrat());
+
+      //Rechteck
+
+        Rechteck R= new Rechteck();
+
+        System.out.println( R.getFlaecheRechteck());
+        System.out.println( R.getUmfangRechteck());
+
+
+        //Dreieck
+
+        Dreieck D = new Dreieck();
+
+        System.out.println( D.getFlaecheDreieck());
+        System.out.println( D.getUmfangDreieck());
+
+    }
+}
+
+
